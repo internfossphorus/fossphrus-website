@@ -102,18 +102,17 @@ body {
 
 .BannerContainer::after {
   content: '';
-  width: 60%;
+  width: 66%;
   height: 100%;
   position: absolute;
   top: 0px;
-  clip-path: polygon(37% 0px, 88% 1px, 59% 100%, -12px 101%);
+  clip-path: polygon(41% 0px, 88% 1px, 59% 100%, -12px 101%);
   background-color: #620e13;
   z-index: 13;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 0.5;
-  left: 85px;
 }
 
 .BannerContainer .contactbutton {
@@ -136,6 +135,8 @@ body {
 .BannerContainer .HerSection span {
   max-width: 80%;
   word-spacing: 20px;
+  line-height: 102px;
+  font-size: 6rem;
 }
 
 .BannerContainer .HerSection p {
@@ -506,6 +507,26 @@ body {
   border-radius: 10px;
 }
 
+.ImageBox .ImageContainer .overlay-red {
+  position: absolute;
+  width: 100%;
+  height: 42%;
+  bottom: 0;
+  z-index: 2;
+  background-color: #bb5156;
+  opacity: 0.5;
+}
+
+.ImageBox .ImageContainer .Image-last .overlay-black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.5;
+}
+
 .ImageBox .ImageContainer img {
   border-radius: 10px;
 }
@@ -542,11 +563,12 @@ body {
   content: '';
   background-image: url("./assets/Services/tech.png");
   background-size: cover;
-  background-position: -500px 550px;
+  background-position: -500px -81px;
   width: 100%;
   height: 100%;
   top: 0px;
   opacity: 0.2;
+  background-repeat: no-repeat;
 }
 
 .partnership h4 {
@@ -1014,7 +1036,7 @@ button:focus {
 .owl-carousel .item .ItemCard h5 {
   position: absolute;
   font-size: 91px;
-  opacity: 0.5;
+  opacity: 0.3;
   right: 20px;
   top: 14px;
 }
@@ -1193,7 +1215,7 @@ button:focus {
 .ctasection .ctaLeft {
   gap: 10px;
   flex-direction: column;
-  padding-left: 100px;
+  padding-left: 135px;
 }
 
 @media (max-width: 1300px) {
@@ -1255,7 +1277,7 @@ button:focus {
 
 .ctasection .ctaRight {
   flex: 1;
-  padding-right: 80px;
+  padding-right: 126px;
 }
 
 .ctasection .ctaRight button {
