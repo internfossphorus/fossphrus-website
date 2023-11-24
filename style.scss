@@ -48,6 +48,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 10;
+  overflow-y: hidden !important;
 
   .line1 {
     width: 4px;
@@ -126,76 +127,75 @@ body {
 
   &::after {
     content: '';
-    width: 65%;
+    width: 60%;
     height: 100%;
     position: absolute;
     top: 0px;
     clip-path: polygon(37% 0px, 88% 1px, 59% 100%, -12px 101%);
-    background-color: #540c10;
+    background-color: #620e13;
     z-index: 13;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 0.5;
-    left: 9px;
+    left: 85px;
   }
 
-  .NavbarShadow {
-    width: 35.6%;
-    height: 4.938em;
-    background-color: #df1f2c;
-    top: 20px;
-    left: 21.9%;
-    z-index: 15;
-    clip-path: polygon(6% 0, 99.5% 0, 95% 100%, 0% 100%);
-    max-width: 41.6%;
-    z-index: 111;
+  // .NavbarShadow {
+  //   width: 35.6%;
+  //   height: 4.938em;
+  //   background-color: #df1f2c;
+  //   top: 20px;
+  //   left: 21.9%;
+  //   z-index: 15;
+  //   clip-path: polygon(6% 0, 99.5% 0, 95% 100%, 0% 100%);
+  //   max-width: 41.6%;
+  //   z-index: 111;
 
-    ul {
-      li {
-        list-style-type: none;
-    
+  //   ul {
+  //     li {
+  //       list-style-type: none;
 
-        a {
-          text-decoration: none;
+  //       a {
+  //         text-decoration: none;
 
-          font-size: 20px;
-          cursor: pointer;
-        }
-      }
-      .active {
-        position: relative;
+  //         font-size: 20px;
+  //         cursor: pointer;
+  //       }
+  //     }
+  //     .active {
+  //       position: relative;
 
-        &::before {
-          content: '';
-          position: absolute;
-          width: 51px;
-          height: 6px;
-          top: -21px;
-          left: -8px;
-          background-color: white;
-        }
+  //       &::before {
+  //         content: '';
+  //         position: absolute;
+  //         width: 51px;
+  //         height: 6px;
+  //         top: -21px;
+  //         left: -8px;
+  //         background-color: white;
+  //       }
 
-        &::after {
-          content: '';
-          background-image: url(../assets/icons/caret-down.svg);
-          background-size: contain;
-          position: absolute;
-          background-repeat: no-repeat;
-          width: 11px;
-          height: 20px;
-          top: -25px;
-          left: 43%;
-          transform: translateX(-50%);
-        }
-      }
-    }
-  }
+  //       &::after {
+  //         content: '';
+  //         background-image: url(../assets/icons/caret-down.svg);
+  //         background-size: contain;
+  //         position: absolute;
+  //         background-repeat: no-repeat;
+  //         width: 11px;
+  //         height: 20px;
+  //         top: -25px;
+  //         left: 43%;
+  //         transform: translateX(-50%);
+  //       }
+  //     }
+  //   }
+  // }
 
   .contactbutton {
     clip-path: polygon(5% 0, 99% 0, 95% 100%, 0% 100%);
-    right: -269px;
-    bottom: -5px;
+    right: 30%;
+    bottom: 15px;
     a {
       cursor: pointer;
     }
@@ -205,7 +205,7 @@ body {
     z-index: 100;
     text-shadow: 2px 2px 3px 3px #f7f7f7;
     padding-top: 346px;
-    padding-left: 46px;
+    padding-left: 66px;
 
     span {
       font-size: 114px;
@@ -261,10 +261,41 @@ body {
     gap: 40px;
     z-index: 20;
     color: #fff !important;
+    background-color: #df1f2c !important;
+    clip-path: polygon(6% 0, 99.5% 0, 95% 100%, 0% 100%);
 
     .nav-item {
-      font-size: 20px;
+      // font-size: 16px;
       line-height: 10px;
+      .nav-link {
+        cursor: pointer;
+      }
+      .active {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 51px;
+          height: 6px;
+          top: -28px;
+          left: 5px;
+          background-color: white;
+        }
+
+        &::after {
+          content: '';
+          background-image: url(../assets/icons/caret-down.svg);
+          background-size: contain;
+          position: absolute;
+          background-repeat: no-repeat;
+          width: 10px;
+          height: 20px;
+          top: -32px;
+          left: 48%;
+          transform: translateX(-50%);
+        }
+      }
     }
   }
 }
@@ -573,11 +604,9 @@ body {
   .ImageContainer {
     gap: 10px;
     border-radius: 10px;
-   
 
     img {
       border-radius: 10px;
-   
     }
   }
 }
@@ -1450,8 +1479,16 @@ button:focus {
 
   .StatsContent {
     padding: 20px;
-
     padding-left: 100px;
+    h2 {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url('./assets/Logo/HeartIcon.png');
+      }
+    }
 
     @media (max-width: 1000px) {
       padding-left: 0px;
@@ -2015,19 +2052,38 @@ button:focus {
     transform: rotate(29deg);
   }
 }
+@keyframes line3Animation {
+  0%,
+  100% {
+    transform: translateX(-42px) rotate(22deg);
+  }
 
+  50% {
+    transform: translateX(328px) translateY(-1000px) rotate(22deg);
+  }
+}
+
+@keyframes line4Animation {
+  50% {
+    transform: translateX(-90px) translateY(200px) rotate(22deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(22deg);
+  }
+}
 @media (max-width: 1280px) {
   @keyframes lineAnimation {
     0%,
     100% {
       bottom: 100vh;
-      left: 308px;
+      left: 430px;
+      transform: rotate(28deg);
     }
 
     50% {
       bottom: 0;
-      left: -54px;
-      transform: rotate(27deg);
+      left: 4px;
+      transform: rotate(32deg);
     }
   }
   @keyframes line2Animation {
@@ -2049,25 +2105,26 @@ button:focus {
       transform: rotate(29deg);
     }
   }
-}
+  @keyframes line3Animation {
+    0%,
+    100% {
+      transform: translateX(201px) rotate(22deg);
+    }
 
-@keyframes line3Animation {
-  0%,
-  100% {
-    transform: translateX(-42px) rotate(22deg);
+    50% {
+      transform: translateX(540px) translateY(-1000px) rotate(22deg);
+    }
   }
-
-  50% {
-    transform: translateX(328px) translateY(-1000px) rotate(22deg);
-  }
-}
-
-@keyframes line4Animation {
-  50% {
-    transform: translateX(-90px) translateY(200px) rotate(22deg);
-  }
-  to {
-    transform: translateX(-50%) rotate(22deg);
+  @keyframes line4Animation {
+    0% {
+      transform: translateX(80px) rotate(22deg);
+    }
+    50% {
+      transform: translateX(-12px) translateY(200px) rotate(22deg);
+    }
+    100% {
+      transform: translateX(80px) rotate(22deg);
+    }
   }
 }
 
@@ -2224,9 +2281,6 @@ button:focus {
 // RESPONSIVE
 // ======================================== LAPTOP ================================
 @media (max-width: 1280px) {
-  .navContainer .navbar-nav {
-    display: block !important;
-  }
   .BannerContainer .line3 {
     width: 4px;
     height: 264px;
@@ -2246,27 +2300,28 @@ button:focus {
     bottom: 29px;
   }
   .BannerContainer::after {
-    width: 75%;
+    width: 88%;
+    left: 73px !important;
   }
-  .BannerContainer .NavbarShadow {
-    width: 41.6%;
-    height: 4.938em;
-    top: 20px;
-    left: 24.9%;
-    z-index: 18;
-    max-width: 44.6%;
-  }
+  // .BannerContainer .NavbarShadow {
+  //   width: 41.6%;
+  //   height: 4.938em;
+  //   top: 20px;
+  //   left: 24.9%;
+  //   z-index: 18;
+  //   max-width: 44.6%;
+  // }
 
-  .BannerContainer .NavbarShadow ul li a {
-    font-size: 1rem;
-  }
-  .BannerContainer .contactbutton {
-    margin-right: 30px;
-    right: -10px;
-  }
+  // .BannerContainer .NavbarShadow ul li a {
+  //   font-size: 1rem;
+  // }
+  // .BannerContainer .contactbutton {
+  //   margin-right: 30px;
+  //   right: -54px;
+  // }
   .BannerContainer .HerSection {
-    padding-left: 50px;
-    padding-top: 341px !important;
+    padding-left: 259px;
+    padding-top: 267px !important;
   }
   .BannerContainer .HerSection span {
     font-size: 109px;
@@ -2319,6 +2374,25 @@ button:focus {
     width: 68%;
     margin-left: 35px;
   }
+
+  .BannerContainer .contactbutton {
+    right: 4%;
+  }
+
+  .dotted-line {
+  
+    &::after {
+      width: 109%;
+    }
+  
+    .dotted-line-active {
+      background-color: $dark-red;
+    }
+  }
+
+  .slick-carousel .slick-next {
+    right: -10px;
+  }
 }
 // ======================================== LAPTOP ================================
 
@@ -2328,13 +2402,14 @@ button:focus {
 }
 
 @media (max-width: 1000px) {
-  .NavbarShadow {
-    display: none !important;
-  }
+  // .NavbarShadow {
+  //   display: none !important;
+  // }
   .BannerContainer::after {
     content: '';
     clip-path: none !important;
     width: 100%;
+    left: 0px !important;
   }
   .BannerContainer .line1 {
     display: none;
