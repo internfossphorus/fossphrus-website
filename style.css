@@ -561,12 +561,25 @@ body {
 .technology-bg::before {
   position: absolute;
   content: '';
-  background-image: url("./assets/Services/tech.png");
+  background-image: url(./assets/Services/tech.png);
   background-size: cover;
-  background-position: -500px -81px;
+  background-position: -9px -159px;
   width: 100%;
   height: 100%;
   top: 0px;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+}
+
+.technology-bg::after {
+  position: absolute;
+  content: '';
+  background-image: url(./assets/Services/tech.png);
+  background-size: cover;
+  background-position: -9px -159px;
+  width: 100%;
+  height: 18%;
+  bottom: 0px;
   opacity: 0.2;
   background-repeat: no-repeat;
 }
