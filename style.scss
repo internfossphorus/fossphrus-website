@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Teko:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Teko:wght@500&display=swap');
 
 $dark-red: #dd082f;
@@ -208,10 +209,10 @@ body {
     padding-left: 66px;
 
     span {
-      font-size: 114px;
+      // font-size: 114px;
       max-width: 80%;
       word-spacing: 20px;
-      line-height: 102px;
+      // line-height: 102px;
     }
 
     p {
@@ -302,7 +303,7 @@ body {
 // About Us Section
 .Aboutus {
   margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-bottom: -1rem;
   .AboutContainer {
     height: 70vh;
     margin-top: 40px;
@@ -359,7 +360,7 @@ body {
       width: 140px;
       height: 140px;
       background-color: #dc0028;
-      bottom: -161px;
+      bottom: -166px;
       right: 13px;
       @media (max-width: 500px) {
         width: 100px;
@@ -407,25 +408,25 @@ body {
       }
 
       h6 {
-        font-size: 63px;
-        line-height: 50px;
-        &::after {
-          position: absolute;
-          content: '';
-          background-image: url('./assets/Logo/HeartIcon2.png');
-          right: 50px;
-          width: 150px;
-          height: 150px;
-          background-size: cover;
-          background-position: center;
-          bottom: 10px;
-          // transform: rotate(90deg);
-        }
+        font-size: 66px;
+        line-height: 57px;
 
         span {
           color: $dark-red;
-          letter-spacing: 6px;
+          letter-spacing: 1px;
         }
+
+        p {
+          color: #c8c9ca;
+        }
+      }
+
+      .hearticon {
+        position: absolute;
+        width: 82px;
+        height: 98px;
+        right: 104px;
+        bottom: 26px;
       }
     }
   }
@@ -490,6 +491,7 @@ body {
 
 // SLICK SLIDER
 .slider-nav {
+  // width: 95%;
   .slick-slide {
     width: 300px;
     padding-left: 13px;
@@ -510,8 +512,8 @@ body {
 }
 .slick-next {
   position: absolute;
-  right: 0;
-  bottom: 10px;
+  right: 22px;
+  bottom: 9px;
   background-color: transparent;
   border: none;
   color: #dd082f;
@@ -543,12 +545,13 @@ body {
   .slideList {
     gap: 30px;
     padding-bottom: 10px;
+    padding-left: 20px;
     span {
       padding-left: 40px;
       &::before {
         content: '';
         position: absolute;
-        left: 0px;
+        left: -15px;
         background-image: url('../assets/icons/tickicons.png');
         background-position: center;
         background-repeat: no-repeat;
@@ -563,7 +566,7 @@ body {
         height: 20px;
         background-color: white;
         position: absolute;
-        left: 11px;
+        left: 0px;
         top: 31px;
       }
       &:last-child::after {
@@ -580,11 +583,11 @@ body {
 
   .buttonList {
     button {
-      background-color: #dd082f;
+      background-color: #cf313c;
       border: none;
       clip-path: polygon(11% 0%, 100% 0%, 87% 101%, 0% 100%);
       width: 190px;
-
+      margin-left: 40px;
       &:last-child {
         width: 223px;
       }
@@ -642,11 +645,75 @@ body {
 // }
 
 .technology-bg {
-  background-image: url('./assets/Banner/Untitled-1.png');
-  // background-size: cover;
+  
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('./assets/Services/tech.png');
+  background-size: cover;
   background-position: -500px 550px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0.2;
+  }
+  
+  
 }
 // TEchnology
+.partnership {
+  h4 {
+    font-size: 75px;
+    color: $dark-red;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 2px solid $dark-red;
+    width: max-content;
+
+    @media (max-width: 1000px) {
+      font-size: 39px;
+    }
+
+    span {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 120px;
+        height: 120px;
+        background-image: url('./assets/icons/small-hearts.png');
+        left: -50px;
+        bottom: 35px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+      bottom: -10px;
+      right: 0px;
+      border-radius: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+      bottom: -10px;
+      left: 0px;
+      border-radius: 100%;
+    }
+  }
+}
 .technology {
   // background: url('./assets/Technology/Technlogoy Bannaer.png');
   background-repeat: no-repeat;
@@ -671,9 +738,9 @@ body {
         content: '';
         width: 120px;
         height: 120px;
-        background-image: url('./assets/Logo/HeartIcon.png');
-        left: -39px;
-        bottom: 28px;
+        background-image: url('./assets/icons/small-hearts.png');
+        left: -430px;
+        bottom: 35px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -941,22 +1008,22 @@ body {
 
       &::after {
         content: '';
-        width: 20px;
-        height: 20px;
-        background-color: #000;
+        width: 15px;
+        height: 15px;
+        background-color: rgb(0, 0, 0);
         position: absolute;
         bottom: -10px;
-        right: 0;
+        right: -5px;
         border-radius: 100%;
       }
       &::before {
         content: '';
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background-color: #000;
         position: absolute;
         bottom: -10px;
-        left: 0;
+        left: -3px;
         border-radius: 100%;
       }
 
@@ -968,7 +1035,7 @@ body {
           width: 120px;
           height: 120px;
           background-image: url('./assets/Logo/HeartIcon.png');
-          left: -41px;
+          left: -30px;
           bottom: 37px;
           background-repeat: no-repeat;
           background-size: cover;
@@ -992,7 +1059,8 @@ button:focus {
 }
 
 .owl-carousel-stacked .owl-item.center {
-  transform: scale(1) !important;
+  transform: scale(1.1) !important;
+  margin-top: 29px !important;
 }
 
 .owl-carousel-stacked .owl-item {
@@ -1012,6 +1080,7 @@ button:focus {
   /* clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 98%); */
   // clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 95%);
   // clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 89%);
+  right: 50px !important;
 }
 .owl-carousel-stacked .left-of-center {
   margin-right: -10px !important;
@@ -1025,6 +1094,7 @@ button:focus {
   transform: translate3d(0px, 0px, -100px) rotateX(6deg) rotateY(20deg) scale(1) !important;
   /* clip-path: polygon(0 0, 91% 12%, 90% 90%, 1% 100%); */
   // clip-path: polygon(0 0, 93% 7%, 92% 93%, 0 98%);
+  right: -50px !important;
 }
 .owl-carousel-stacked .right-of-center .item {
   clip-path: polygon(0 0%, 100% 15%, 100% 90%, 0 100%);
@@ -1032,6 +1102,8 @@ button:focus {
 
 .owl-carousel-stacked .center {
   z-index: 2;
+  transform: scale(1.1) !important;
+
 }
 
 .owl-carousel-stacked .owl-carousel {
@@ -1197,7 +1269,7 @@ button:focus {
 
       .BrandCol {
         transition: hover 0.5s ease-in-out;
-        height: 100px;
+        height: 128px;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
         &:hover {
@@ -1347,6 +1419,7 @@ button:focus {
     }
 
     .ctaDivider {
+      width: 62%;
       height: 4px;
       background-color: white;
 
@@ -1379,6 +1452,7 @@ button:focus {
 
     .ctadescription {
       font-size: 20px;
+      max-width: 75%;
     }
   }
 
@@ -1454,7 +1528,7 @@ button:focus {
   padding: 10px;
   border-radius: 5px;
   position: relative;
-  bottom: -15px;
+  bottom: -52px;
 
   @media (max-width: 750px) {
     flex-direction: column;
@@ -1464,10 +1538,18 @@ button:focus {
     flex: 1;
     gap: 2;
 
-    h2 {
-      font-size: 50px;
+    h2,
+    span {
+      font-size: 76px;
+    }
+    p {
+      margin-top: -15px;
     }
   }
+}
+
+.StatsContentHeader {
+  padding-left: 6rem !important;
 }
 
 .STATSBG {
@@ -1481,6 +1563,7 @@ button:focus {
     padding: 20px;
     padding-left: 100px;
     h2 {
+      font-size: 80px;
       &::after {
         content: '';
         position: absolute;
@@ -1529,11 +1612,11 @@ button:focus {
       }
 
       .pictureIcon {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
 
         bottom: -25px;
-        left: 60px;
+        left: 36px;
       }
 
       .userInfo {
@@ -1599,7 +1682,7 @@ button:focus {
 }
 
 .question {
-  padding: 20px 80px 20px 20px;
+  padding: 12px 80px 12px 20px;
 
   cursor: pointer;
 
@@ -1645,6 +1728,8 @@ button:focus {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 50px;
+  padding-top: 50px;
 
   h4 {
     font-size: 60px;
@@ -1660,24 +1745,24 @@ button:focus {
 
     &::after {
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       background-color: white;
       position: absolute;
       border-radius: 100%;
       right: 0;
-      bottom: -9px;
+      bottom: -6px;
     }
 
     &::before {
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       background-color: white;
       position: absolute;
       border-radius: 100%;
       left: -2px;
-      bottom: -9px;
+      bottom: -6px;
     }
   }
 
@@ -1695,6 +1780,11 @@ button:focus {
 
       border-radius: 4px;
 
+      .card-body {
+        p {
+          line-height: 30px;
+        }
+      }
       @media (max-width: 1000px) {
         width: 80%;
 
@@ -1710,9 +1800,7 @@ button:focus {
 
 // CONTACT FORM
 .contentContact {
-  // width: 100%;
-
-  gap: 10px;
+  // gap: 10px;
   // padding: 60px 0px 60px 0px;
 
   h3 {
@@ -1720,8 +1808,9 @@ button:focus {
   }
 
   h4 {
-    font-size: 65px !important;
+    font-size: 70px !important;
     font-weight: 500 !important;
+    line-height: 60px;
 
     @media (max-width: 1000px) {
       font-size: 39px !important;
@@ -1733,14 +1822,14 @@ button:focus {
   }
 
   .ContactDivider {
-    width: 80%;
+    width: 62%;
     height: 4px;
 
     &::after {
       position: absolute;
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       background-color: $dark-red;
       border-radius: 100%;
       right: -3px;
@@ -1750,8 +1839,8 @@ button:focus {
     &::before {
       position: absolute;
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       background-color: $dark-red;
       border-radius: 100%;
       left: -3px;
@@ -1762,8 +1851,10 @@ button:focus {
   .contactUtilsContainer {
     .contactIconBox {
       padding: 10px;
-
-      gap: 50px;
+      gap: 18px;
+      &:nth-child(2) {
+        margin-left: 5px !important;
+      }
 
       i {
         color: $dark-red;
@@ -1784,13 +1875,13 @@ button:focus {
 
 .contactInput {
   width: 100%;
-
   padding-right: 10px;
   padding-left: 10px;
-
   gap: 5px;
-  border: 1px solid black;
   border-radius: 5px;
+  img {
+    margin-right: 4px;
+  }
   @media (max-width: 1000px) {
     &:first-child {
       margin-bottom: 10px;
@@ -1836,7 +1927,18 @@ button:focus {
   background-size: cover;
   background-position: center;
 }
+.hover-footer-icons {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff !important;
+    color: $dark-red !important;
+  }
+}
 
+.quick-style {
+  margin-right: 42px;
+}
 .footer-content {
   z-index: 2;
 }
@@ -1930,8 +2032,10 @@ button:focus {
   padding: 14px 28px;
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
-
   color: #999;
+  &::placeholder {
+    color: #999;
+  }
 }
 
 .subscribe-form button {
@@ -1950,8 +2054,8 @@ button:focus {
 
 // BASE CSS
 // Margin Padding
-.mb-206 {
-  margin-bottom: 206px;
+.mb-169 {
+  margin-bottom: 169px;
 }
 .pl-50 {
   padding-left: 50px;
@@ -2380,11 +2484,10 @@ button:focus {
   }
 
   .dotted-line {
-  
     &::after {
       width: 109%;
     }
-  
+
     .dotted-line-active {
       background-color: $dark-red;
     }

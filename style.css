@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Teko:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Teko:wght@500&display=swap");
 * {
   margin: 0;
@@ -133,10 +134,8 @@ body {
 }
 
 .BannerContainer .HerSection span {
-  font-size: 114px;
   max-width: 80%;
   word-spacing: 20px;
-  line-height: 102px;
 }
 
 .BannerContainer .HerSection p {
@@ -223,7 +222,7 @@ body {
 
 .Aboutus {
   margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-bottom: -1rem;
 }
 
 .Aboutus .AboutContainer {
@@ -251,7 +250,7 @@ body {
   width: 140px;
   height: 140px;
   background-color: #dc0028;
-  bottom: -161px;
+  bottom: -166px;
   right: 13px;
 }
 
@@ -313,25 +312,25 @@ body {
 }
 
 .Aboutus .AboutContainer .AboutContent h6 {
-  font-size: 63px;
-  line-height: 50px;
-}
-
-.Aboutus .AboutContainer .AboutContent h6::after {
-  position: absolute;
-  content: '';
-  background-image: url("./assets/Logo/HeartIcon2.png");
-  right: 50px;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  bottom: 10px;
+  font-size: 66px;
+  line-height: 57px;
 }
 
 .Aboutus .AboutContainer .AboutContent h6 span {
   color: #dd082f;
-  letter-spacing: 6px;
+  letter-spacing: 1px;
+}
+
+.Aboutus .AboutContainer .AboutContent h6 p {
+  color: #c8c9ca;
+}
+
+.Aboutus .AboutContainer .AboutContent .hearticon {
+  position: absolute;
+  width: 82px;
+  height: 98px;
+  right: 104px;
+  bottom: 26px;
 }
 
 .services {
@@ -405,8 +404,8 @@ body {
 
 .slick-next {
   position: absolute;
-  right: 0;
-  bottom: 10px;
+  right: 22px;
+  bottom: 9px;
   background-color: transparent;
   border: none;
   color: #dd082f;
@@ -441,6 +440,7 @@ body {
 .slider-content-desc .slideList {
   gap: 30px;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .slider-content-desc .slideList span {
@@ -450,7 +450,7 @@ body {
 .slider-content-desc .slideList span::before {
   content: '';
   position: absolute;
-  left: 0px;
+  left: -15px;
   background-image: url("../assets/icons/tickicons.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -465,7 +465,7 @@ body {
   height: 20px;
   background-color: white;
   position: absolute;
-  left: 11px;
+  left: 0px;
   top: 31px;
 }
 
@@ -480,10 +480,11 @@ body {
 }
 
 .slider-content-desc .buttonList button {
-  background-color: #dd082f;
+  background-color: #cf313c;
   border: none;
   clip-path: polygon(11% 0%, 100% 0%, 87% 101%, 0% 100%);
   width: 190px;
+  margin-left: 40px;
 }
 
 .slider-content-desc .buttonList button:last-child {
@@ -533,8 +534,69 @@ body {
 }
 
 .technology-bg {
-  background-image: url("./assets/Banner/Untitled-1.png");
+  position: relative;
+}
+
+.technology-bg::before {
+  position: absolute;
+  content: '';
+  background-image: url("./assets/Services/tech.png");
+  background-size: cover;
   background-position: -500px 550px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0.2;
+}
+
+.partnership h4 {
+  font-size: 75px;
+  color: #dd082f;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 2px solid #dd082f;
+  width: max-content;
+}
+
+@media (max-width: 1000px) {
+  .partnership h4 {
+    font-size: 39px;
+  }
+}
+
+.partnership h4 span::after {
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-image: url("./assets/icons/small-hearts.png");
+  left: -50px;
+  bottom: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.partnership h4::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  bottom: -10px;
+  right: 0px;
+  border-radius: 100%;
+}
+
+.partnership h4::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  bottom: -10px;
+  left: 0px;
+  border-radius: 100%;
 }
 
 .technology {
@@ -563,9 +625,9 @@ body {
   content: '';
   width: 120px;
   height: 120px;
-  background-image: url("./assets/Logo/HeartIcon.png");
-  left: -39px;
-  bottom: 28px;
+  background-image: url("./assets/icons/small-hearts.png");
+  left: -430px;
+  bottom: 35px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -773,23 +835,23 @@ body {
 
 .ourRecentProjects .headingRecentProjects h2::after {
   content: '';
-  width: 20px;
-  height: 20px;
-  background-color: #000;
+  width: 15px;
+  height: 15px;
+  background-color: black;
   position: absolute;
   bottom: -10px;
-  right: 0;
+  right: -5px;
   border-radius: 100%;
 }
 
 .ourRecentProjects .headingRecentProjects h2::before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: #000;
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: -3px;
   border-radius: 100%;
 }
 
@@ -803,7 +865,7 @@ body {
   width: 120px;
   height: 120px;
   background-image: url("./assets/Logo/HeartIcon.png");
-  left: -41px;
+  left: -30px;
   bottom: 37px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -824,7 +886,8 @@ button:focus {
 }
 
 .owl-carousel-stacked .owl-item.center {
-  transform: scale(1) !important;
+  transform: scale(1.1) !important;
+  margin-top: 29px !important;
 }
 
 .owl-carousel-stacked .owl-item {
@@ -841,6 +904,7 @@ button:focus {
   transform: translate3d(0px, 0px, -100px) rotateX(5deg) rotateY(-29deg) scale(1) !important;
   /* clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 86%); */
   /* clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 98%); */
+  right: 50px !important;
 }
 
 .owl-carousel-stacked .left-of-center {
@@ -854,6 +918,7 @@ button:focus {
 .owl-carousel-stacked .right-of-center {
   transform: translate3d(0px, 0px, -100px) rotateX(6deg) rotateY(20deg) scale(1) !important;
   /* clip-path: polygon(0 0, 91% 12%, 90% 90%, 1% 100%); */
+  right: -50px !important;
 }
 
 .owl-carousel-stacked .right-of-center .item {
@@ -862,6 +927,7 @@ button:focus {
 
 .owl-carousel-stacked .center {
   z-index: 2;
+  transform: scale(1.1) !important;
 }
 
 .owl-carousel-stacked .owl-carousel {
@@ -1036,7 +1102,7 @@ button:focus {
 
 .Brands .BrandCenter .BrandsSection .BrandCol {
   transition: hover 0.5s ease-in-out;
-  height: 100px;
+  height: 128px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -1149,6 +1215,7 @@ button:focus {
 }
 
 .ctasection .ctaLeft .ctaDivider {
+  width: 62%;
   height: 4px;
   background-color: white;
 }
@@ -1183,6 +1250,7 @@ button:focus {
 
 .ctasection .ctaLeft .ctadescription {
   font-size: 20px;
+  max-width: 75%;
 }
 
 .ctasection .ctaRight {
@@ -1257,7 +1325,7 @@ button:focus {
   padding: 10px;
   border-radius: 5px;
   position: relative;
-  bottom: -15px;
+  bottom: -52px;
 }
 
 @media (max-width: 750px) {
@@ -1271,8 +1339,17 @@ button:focus {
   gap: 2;
 }
 
-.counterSection .counterBox h2 {
-  font-size: 50px;
+.counterSection .counterBox h2,
+.counterSection .counterBox span {
+  font-size: 76px;
+}
+
+.counterSection .counterBox p {
+  margin-top: -15px;
+}
+
+.StatsContentHeader {
+  padding-left: 6rem !important;
 }
 
 .STATSBG {
@@ -1287,6 +1364,10 @@ button:focus {
   padding: 20px;
   padding-left: 100px;
   gap: 15px;
+}
+
+.STATSBG .StatsContent h2 {
+  font-size: 80px;
 }
 
 .STATSBG .StatsContent h2::after {
@@ -1350,10 +1431,10 @@ button:focus {
 }
 
 .STATSBG .clientTestimonial .clientBox .pictureIcon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   bottom: -25px;
-  left: 60px;
+  left: 36px;
 }
 
 .STATSBG .clientTestimonial .clientBox .userInfo {
@@ -1414,7 +1495,7 @@ button:focus {
 }
 
 .question {
-  padding: 20px 80px 20px 20px;
+  padding: 12px 80px 12px 20px;
   cursor: pointer;
 }
 
@@ -1456,6 +1537,8 @@ button:focus {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .blogSection h4 {
@@ -1472,24 +1555,24 @@ button:focus {
 
 .blogSection .dividerBlog::after {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   position: absolute;
   border-radius: 100%;
   right: 0;
-  bottom: -9px;
+  bottom: -6px;
 }
 
 .blogSection .dividerBlog::before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   position: absolute;
   border-radius: 100%;
   left: -2px;
-  bottom: -9px;
+  bottom: -6px;
 }
 
 .blogSection .blogCardContainer {
@@ -1509,6 +1592,10 @@ button:focus {
   border-radius: 4px;
 }
 
+.blogSection .blogCardContainer .blogCard .card-body p {
+  line-height: 30px;
+}
+
 @media (max-width: 1000px) {
   .blogSection .blogCardContainer .blogCard {
     width: 80%;
@@ -1518,17 +1605,14 @@ button:focus {
   }
 }
 
-.contentContact {
-  gap: 10px;
-}
-
 .contentContact h3 {
   color: #dd082f;
 }
 
 .contentContact h4 {
-  font-size: 65px !important;
+  font-size: 70px !important;
   font-weight: 500 !important;
+  line-height: 60px;
 }
 
 @media (max-width: 1000px) {
@@ -1542,15 +1626,15 @@ button:focus {
 }
 
 .contentContact .ContactDivider {
-  width: 80%;
+  width: 62%;
   height: 4px;
 }
 
 .contentContact .ContactDivider::after {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: #dd082f;
   border-radius: 100%;
   right: -3px;
@@ -1560,8 +1644,8 @@ button:focus {
 .contentContact .ContactDivider::before {
   position: absolute;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: #dd082f;
   border-radius: 100%;
   left: -3px;
@@ -1570,7 +1654,11 @@ button:focus {
 
 .contentContact .contactUtilsContainer .contactIconBox {
   padding: 10px;
-  gap: 50px;
+  gap: 18px;
+}
+
+.contentContact .contactUtilsContainer .contactIconBox:nth-child(2) {
+  margin-left: 5px !important;
 }
 
 .contentContact .contactUtilsContainer .contactIconBox i {
@@ -1591,8 +1679,11 @@ button:focus {
   padding-right: 10px;
   padding-left: 10px;
   gap: 5px;
-  border: 1px solid black;
   border-radius: 5px;
+}
+
+.contactInput img {
+  margin-right: 4px;
 }
 
 @media (max-width: 1000px) {
@@ -1633,6 +1724,20 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hover-footer-icons {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-footer-icons:hover {
+  background-color: #fff !important;
+  color: #dd082f !important;
+}
+
+.quick-style {
+  margin-right: 42px;
 }
 
 .footer-content {
@@ -1692,6 +1797,10 @@ button:focus {
   color: #999;
 }
 
+.subscribe-form input::placeholder {
+  color: #999;
+}
+
 .subscribe-form button {
   right: 0;
   background: #dc0028;
@@ -1706,8 +1815,8 @@ button:focus {
   transform: rotate(-6deg);
 }
 
-.mb-206 {
-  margin-bottom: 206px;
+.mb-169 {
+  margin-bottom: 169px;
 }
 
 .pl-50 {
