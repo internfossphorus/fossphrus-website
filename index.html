@@ -22,7 +22,7 @@
 
 <body class="overflow-x-hidden">
     <!-- -------------------------- BANNER COMPONENTS ---------------------------------------- -->
-    <div class="BannerContainer position-relative  py-3 w-100 vh-100 ">
+    <div class="BannerContainer position-relative  py-3 vw-100 vh-100 ">
         <!-- --------------- NAVBAR ------------------------ -->
 
         <div class="container HerSection position-relative h-100  d-flex justify-content-center align-items-center">
@@ -42,7 +42,7 @@
         <div class="BannerMiddle position-absolute w-100 h-100 top-0"></div>
         <div class="BannerRight position-absolute w-100 h-100 bottom-0 end-0"></div>
 
-        <div class="navContainer float-end position-absolute end-0">
+        <div class="navContainer float-end position-absolute end-0 ">
             <nav class="navbar px-lg-5 navbar-expand-lg ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -72,9 +72,12 @@
                                 <a class="nav-link text-white" href="#">Blog</a>
                             </li>
 
+                           
+                            
+
 
                         </ul>
-                        <button class="nav-item position-absolute  text-uppercase bg-black px-5 py-2  contactbutton ">
+                        <button class="nav-item position-absolute  text-uppercase bg-black px-5 py-2  contactbutton d-sm-none ">
                             <a class="nav-link text-white" href="#">Contact</a>
                         </button>
                     </div>
@@ -109,6 +112,12 @@
         <div class="line3 position-absolute"></div>
         <div class="line4 bg-white position-absolute"></div>
         <div class="line5 bg-white position-absolute"></div>
+
+
+        <div class="bg-clip-banner">
+            <div class="lines"></div>
+            <div class="clip-path"></div>
+        </div>
     </div>
 
 
@@ -640,6 +649,16 @@
                                         <h5 class="heading-Teko-fonts">01</h5>
                                     </div>
                                 </div>
+                                <div class="item">
+                                    <img src="./assets/blog/luca-bravo-XJXWbfSo2f0-unsplash.jpg" />
+                                    <div class="ItemCard">
+                                        <h3 class="heading-Teko-fonts">Muller & Philips</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                                            laborum.Lorem
+                                            ipsum dolor sit amet consectetur adipisicing elit. Earum, laborum.</p>
+                                        <h5 class="heading-Teko-fonts">01</h5>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -894,7 +913,7 @@
 
     <!-- --------------------- FAQ SECTION -------------------------------- -->
     <div class="FaqSection d-flex flex-column justify-content-center align-items-center py-5">
-        <h1 class="FAQHEADING display-1 fw-medium heading-Teko-fonts px-5 position-relative" data-aos="fade-down"
+        <h1 class="FAQHEADING display-1 fw-medium heading-Teko-fonts pxlg-5 px-md-5 px-sm-0 position-relative" data-aos="fade-down"
             data-aos-duration="2000">
             <span>FREQUENTLY</span> ASKED QUESTIONS
         </h1>
@@ -1068,7 +1087,7 @@
                     </div>
                 </div>
             </div>
-            <div class="blogCard bg-white" data-aos="fade-down" data-aos-duration="3000">
+            <div class="blogCard" data-aos="fade-down" data-aos-duration="3000">
                 <div class="card w-100 h-100">
                     <img src="./assets/blog/2.png" class="card-img-top h-200" alt="..." />
                     <div class="card-body">
@@ -1308,24 +1327,24 @@
                 slidesToScroll: 3,
                 responsive: [
                     {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+
                     , {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 1
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 1
+                        }
                     }
-                }
 
                 ]
             });
