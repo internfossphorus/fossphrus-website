@@ -55,7 +55,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul
-                            class="navbar-nav position-absolute px-5 top-0 bottom-0 d-flex justify-content-center align-items-center bg-danger me-auto position-relative mb-2 mb-lg-0  ms-5">
+                            class="navbar-nav lg-nav  position-absolute px-5 top-0 bottom-0 d-flex justify-content-center align-items-center bg-danger me-auto position-relative mb-2 mb-lg-0  ms-5">
                             <li class="nav-item text-uppercase  ">
                                 <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
                             </li>
@@ -72,12 +72,30 @@
                                 <a class="nav-link text-white" href="#">Blog</a>
                             </li>
 
-                           
-                            
-
+                        </ul>
+                        <ul class="navbar-nav sm-nav text-center">
+                            <li class="nav-item text-uppercase  ">
+                                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item text-uppercase ">
+                                <a class="nav-link text-black" href="#">About</a>
+                            </li>
+                            <li class="nav-item text-uppercase ">
+                                <a class="nav-link text-black" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item text-uppercase ">
+                                <a class="nav-link text-black" href="#">Services</a>
+                            </li>
+                            <li class="nav-item text-uppercase">
+                                <a class="nav-link text-black" href="#">Blog</a>
+                            </li class="nav-item text-uppercase">
+                            <li>
+                                <a class="nav-link text-white w-max-content mx-auto bg-black px-4 py-2" href="#">Contact</a>
+                            </li>
 
                         </ul>
-                        <button class="nav-item position-absolute  text-uppercase bg-black px-5 py-2  contactbutton d-sm-none ">
+                        <button
+                            class="nav-item position-absolute  text-uppercase bg-black px-5 py-2  contactbutton d-sm-none ">
                             <a class="nav-link text-white" href="#">Contact</a>
                         </button>
                     </div>
@@ -913,8 +931,8 @@
 
     <!-- --------------------- FAQ SECTION -------------------------------- -->
     <div class="FaqSection d-flex flex-column justify-content-center align-items-center py-5">
-        <h1 class="FAQHEADING display-1 fw-medium heading-Teko-fonts pxlg-5 px-md-5 px-sm-0 position-relative" data-aos="fade-down"
-            data-aos-duration="2000">
+        <h1 class="FAQHEADING display-1 fw-medium heading-Teko-fonts pxlg-5 px-md-5 px-sm-0 position-relative"
+            data-aos="fade-down" data-aos-duration="2000">
             <span>FREQUENTLY</span> ASKED QUESTIONS
         </h1>
 
@@ -1273,7 +1291,8 @@
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
                                 <h3 class="mb-2 text-white fs-4"> Connect With us</h3>
-                                <div class="d-flex justify-content-start align-items-start gap-2 conect-center">
+                                <div
+                                    class="d-flex justify-content-start align-items-start gap-2 conect-center float-sm-start">
                                     <div
                                         class="d-flex hover-footer-icons bg-transparent text-white radius-full border-w-1 w-40 h-40  justify-content-center  align-items-center">
                                         <i class="fa-brands fa-facebook-f"></i>
@@ -1338,7 +1357,12 @@
                             slidesToShow: 3
                         }
                     },
-
+                    {
+                        breakpoint: 850,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
                     , {
                         breakpoint: 520,
                         settings: {
@@ -1438,33 +1462,31 @@
 
 
 
-            // ====================== TECHNOLOGIES WE USE =========================
-            function scaleUp(className) {
-                // Select all elements with the specified class
-                var elements = $('.' + className);
 
-                // Iterate through each element
-                elements.each(function () {
-                    // Find the inner children with the same class
-                    var innerChildren = $(this).find('.' + 'slick-active');
 
-                    // Check if there are inner children
-                    if (innerChildren.length > 0) {
-                        // Get the innermost child
-                        var innermostChild = innerChildren.last();
-
-                        // Apply the scaling transformation
-                        innermostChild.addClass('scale-up');
-                    }
-                });
-            }
-            scaleUp('slick-carousel');
-            // ====================== TECHNOLOGIES WE USE =========================
         });
 
         let child = document.getElementById('expreience')
         let parentElement = child.parentElement;
         parentElement.classList.add('experienceSection')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
 

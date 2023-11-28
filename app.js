@@ -4,9 +4,11 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: false,
+    centerMode: true,
+    centerPadding: '20px',
     pauseOnHover: false,
     prevArrow: '<i class="fa-solid fa-angle-left slick-prev py-1 px-2" ></i>',
-    nextArrow: '<i class="fa-solid fa-angle-right slick-next py-1 px-2" ></i>',
+    nextArrow: '<i class="fa-solid fa-angle-right slick-next  py-1 px-2" onclick="change()" ></i>',
     responsive: [
       {
         breakpoint: 1000,
@@ -28,7 +30,7 @@ $(document).ready(function () {
         }
       }
       ,
-       {
+      {
         breakpoint: 520,
         settings: {
           slidesToShow: 1
@@ -163,6 +165,17 @@ $(document).ready(function () {
     infinite: true,
     prevArrow: '<button type="button" data-role="none"  class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="fa-solid fa-angle-left"></i></button>',
     nextArrow: '<button type="button" id="changeslides" data-role="none"  class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="fa-solid fa-angle-right"></i></button>',
+    responsive: [
+     
+      ,
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+
+    ]
   });
 
   $('a[data-slide]').click(function (e) {
@@ -188,7 +201,31 @@ $(document).ready(function () {
 
 
 
-  // Modify deg
+  function updateSlickClasses(parentClassName, childClassName) {
+    // Find the parent element
+    var $parent = $('.' + parentClassName);
+
+    // Find children with the specified class within the parent
+    var $children = $parent.find('.' + childClassName);
+
+    // Remove slick-current from the first child
+    $children.first().removeClass('slick-current');
+
+    // Calculate the index of the center child
+    var centerIndex = Math.floor($children.length / 2);
+
+    // Add slick-current to the center child
+    $children.eq(centerIndex).addClass('slick-current');
+  }
+  updateSlickClasses('slick-carousel', 'slick-active');
+
+  $('.slick-carousel').slick();
+
+  
+
+  const change = () => {
+    updateSlickClasses('slick-carousel', 'slick-active');
+  }
 
 
 });
