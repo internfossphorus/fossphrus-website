@@ -21,125 +21,107 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <!-- -------------------------- BANNER COMPONENTS ---------------------------------------- -->
-    <div class="BannerContainer position-relative  py-3 vw-100 vh-100 ">
-        <!-- --------------- NAVBAR ------------------------ -->
 
-        <div class="container HerSection position-relative h-100  d-flex justify-content-center align-items-center">
-            <div class="d-flex w-100 h-100 flex-column justify-content-start align-items-start gap-1">
-                <h4 class="text-white heading-Teko-fonts text-uppercase " data-aos="fade-right"
-                    data-aos-duration="3000">
-                    Conquer The
-                    Digital Spectrum</h4>
-                <span class="heading-Teko-fonts text-uppercase fw-bolder text-white" data-aos="fade-left"
-                    data-aos-duration="3000">360° Brand Strategy
-                    consultant</span>
-                <p data-aos="fade-right heading-Teko-fonts data-aos-duration=" 3000" class="text-white">
-                    We infuse incusive ideas with imaginative to help you shape resilent Brands.
-                </p>
-            </div>
-        </div>
-        <div class="BannerMiddle position-absolute w-100 h-100 top-0"></div>
-        <div class="BannerRight position-absolute w-100 h-100 bottom-0 end-0"></div>
 
-        <div class="navContainer float-end position-absolute end-0 ">
-            <nav class="navbar px-lg-5 navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/Logo/darklogo.png" class="img-fluid" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul
-                            class="navbar-nav lg-nav  position-absolute px-5 top-0 bottom-0 d-flex justify-content-center align-items-center bg-danger me-auto position-relative mb-2 mb-lg-0  ms-5">
-                            <li class="nav-item text-uppercase  ">
-                                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-white" href="#">About</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-white" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-white" href="#">Services</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-white" href="#">Blog</a>
-                            </li>
+    <!-- ================== BANNER HTML ================== -->
+    <div class="Banner overflow-y-hidden position-relative w-100 vh-100">
 
-                        </ul>
-                        <ul class="navbar-nav sm-nav text-center">
-                            <li class="nav-item text-uppercase  ">
-                                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-black" href="#">About</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-black" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item text-uppercase ">
-                                <a class="nav-link text-black" href="#">Services</a>
-                            </li>
-                            <li class="nav-item text-uppercase">
-                                <a class="nav-link text-black" href="#">Blog</a>
-                            </li class="nav-item text-uppercase">
-                            <li>
-                                <a class="nav-link text-white w-max-content mx-auto bg-black px-4 py-2" href="#">Contact</a>
-                            </li>
+        <!-- ================ NAVBAR ================== -->
+        <nav class="navbar navbar-expand-lg ps-5 position-absolute">
+            <div class="container-fluid my-2">
+                <a class="navbar-brand ms-lg-0 ms-md-5 ms-sm-5" href="#">
+                    <img src="./assets/Logo/darklogo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" id="toggleNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 for-small-device">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">Services</a>
+                        </li>
 
-                        </ul>
-                        <button
-                            class="nav-item position-absolute  text-uppercase bg-black px-5 py-2  contactbutton d-sm-none ">
-                            <a class="nav-link text-white" href="#">Contact</a>
-                        </button>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white px-5 py-2 bg-black w-max-content" aria-current="page" href="#">Contact us</a>
+                        </li>
+
+                    </ul>
+                    <button class="contact-us bg-black position-absolute end-0 me-5 text-white px-5 py-2">Contact
+                        us</button>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        <!-- ================ NAVBAR ================== -->
 
-        <!-- <div class="NavbarShadow d-flex justify-content-start px-5 align-items-center position-absolute">
-            <ul class="d-flex justify-content-center align-items-center gap-5 mt-2">
-                <li class="text-white active">
-                    <a href="#" class="heading-Teko-fonts text-white ">Home</a>
+        <!-- ============== CLIP PATH AND NAV ============= -->
+        <div class="cip-path-nav position-absolute">
+            <!-- ============= ANIMATED LINES =============== -->
+            <div class="lines position-relative">
+                <div class="line1Animate position-absolute bg-white"></div>
+                <div class="line2Animate position-absolute "></div>
+                <div class="line3Animate position-absolute bg-white"></div>
+                <div class="line4Animate position-absolute "></div>
+                <div class="line5Animate position-absolute bg-white"></div>
+
+
+
+            </div>
+            <!-- ============= ANIMATED LINES =============== -->
+
+            <div class="clip w-100 h-100 position-relative">
+
+            </div>
+            <ul class="d-flex Large-Nav  top-0  ps-5 align-items-center pe-5 position-absolute">
+                <li class="active position-relative">
+                    <a class="fs-1 text-white text-uppercase heading-Teko-fonts">Home</a>
                 </li>
-                <li class="text-white">
-                    <a href="#" class="heading-Teko-fonts  text-white">About Us</a>
+                <li class="position-relative">
+                    <a class="fs-1 text-white text-uppercase heading-Teko-fonts">ABOUT </a>
                 </li>
-                <li class="text-white">
-                    <a href="#" class="heading-Teko-fonts text-white ">Portfolio</a>
+                <li class="position-relative">
+                    <a class="fs-1 text-white text-uppercase heading-Teko-fonts">PORTFOLIO</a>
                 </li>
-                <li class="text-white">
-                    <a href="#" class="heading-Teko-fonts  text-white">Service </a>
+                <li class="position-relative">
+                    <a class="fs-1 text-white text-uppercase heading-Teko-fonts">Services</a>
                 </li>
-                <li class="text-white">
-                    <a href="#" class="heading-Teko-fonts  text-white">Blog </a>
+                <li class="position-relative">
+                    <a class="fs-1 text-white text-uppercase heading-Teko-fonts">Blog</a>
                 </li>
             </ul>
-        </div> -->
-
-
-
-        <div class="line1 bg-white position-absolute"></div>
-        <div class="line2 position-absolute"></div>
-        <div class="line3 position-absolute"></div>
-        <div class="line4 bg-white position-absolute"></div>
-        <div class="line5 bg-white position-absolute"></div>
-
-
-        <div class="bg-clip-banner">
-            <div class="lines"></div>
-            <div class="clip-path"></div>
         </div>
+        <!-- ============== CLIP PATH AND NAV ============= -->
+
+
+        <!-- ==================== HERO SECTION ===================== -->
+        <div class="w-100 h-100 Hero position-absolute d-flex flex-column justify-content-center align-items-start">
+            <h6 class="text-white heading-Teko-fonts display-5">CONQUER THE DIGITAL SPECTRUM</h6>
+            <h5 class="text-white heading-Teko-fonts ">
+                360° BRAND STRATEGY <br /> CONSULTANT
+            </h5>
+            <p class="text-white fs-5">
+                We infuse incusive ideas with imaginative to help you shape <br /> resilent Brands.
+            </p>
+        </div>
+        <!-- ==================== HERO SECTION ===================== -->
+
     </div>
+    <!-- ================== BANNER HTML ================== -->
 
 
-    <!-- -------------------------- BANNER COMPONENTS ---------------------------------------- -->
+
 
     <!-- ------------------- ABOUT US SECTION ------------------------- -->
 
@@ -228,8 +210,8 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider-nav slider-thumb mb-3  border-b-dark-4-red">
-                                <span class="">Website Development</span>
-                                <span class="">Website Application</span>
+                                <span class="">Development</span>
+                                <span class="">Application</span>
                                 <span class="">Digital Marketing</span>
                                 <span class="">Content Creation</span>
 
@@ -1288,7 +1270,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 mb-50 footer-responsive">
-                        <div class="footer-widget">
+                        <div class="footer-widget py-4">
                             <div class="footer-widget-heading">
                                 <h3 class="mb-2 text-white fs-4"> Connect With us</h3>
                                 <div
@@ -1303,7 +1285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-25 mt-4">
+                            <div class="mb-25 footer-join">
                                 <p class="mt-5 fs-r-1-2 text-white weight-800 fs-4">
                                     Join Our Newsletter
                                 </p>
@@ -1322,15 +1304,15 @@
         </div>
     </footer>
     <!-- -------------------- FOOTER SECTION ---------------------------- -->
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/jquery.js"></script>
+
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 
@@ -1338,6 +1320,11 @@
 
     <script>
         $(document).ready(function () {
+            $('.sliderpartnerList .slick-dots li').html('');
+
+            $('#toggleNav').click(function () {
+                $('#navbarSupportedContent').toggleClass('show');
+            });
 
 
             $('.BrandsSection').slick({
@@ -1404,7 +1391,7 @@
                 ]
             });
 
-            $('.sliderpartnerList .slick-dots li').html('');
+
 
 
             $(".owl-carousel-stacked").on(
@@ -1466,9 +1453,7 @@
 
         });
 
-        let child = document.getElementById('expreience')
-        let parentElement = child.parentElement;
-        parentElement.classList.add('experienceSection')
+
 
 
 
