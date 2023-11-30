@@ -54,7 +54,6 @@ $dark-red: #dd082f;
 // ================================ FONTS ==============================
 
 body {
-  position: relative;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -148,7 +147,7 @@ button {
     z-index: 10;
     width: 65%;
     top: 10px;
-    height: 100%;
+
     left: 38px;
 
     @media (min-width: 1370px) and (max-width: 1900px) {
@@ -442,7 +441,6 @@ button {
     }
 
     li {
-      list-style: none;
       cursor: pointer;
 
       &.active {
@@ -632,7 +630,6 @@ button {
       }
 
       .hearticon {
-        position: absolute;
         width: 82px;
         height: 98px;
         right: 104px;
@@ -851,25 +848,25 @@ button {
     gap: 10px;
     border-radius: 10px;
 
-    .overlay-red {
-      position: absolute;
-      width: 100%;
-      height: 42%;
-      bottom: 0;
-      z-index: 2;
-      background-color: #bb5156;
-      opacity: 0.5;
-    }
+    // .overlay-red {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 42%;
+    //   bottom: 0;
+    //   z-index: 2;
+    //   background-color: #bb5156;
+    //   opacity: 0.5;
+    // }
     .Image-last {
-      .overlay-black {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        z-index: 2;
-        background-color: #000;
-        opacity: 0.5;
-      }
+      // .overlay-black {
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   bottom: 0;
+      //   z-index: 2;
+      //   background-color: #000;
+      //   opacity: 0.5;
+      // }
     }
 
     img {
@@ -909,7 +906,7 @@ button {
 // }
 
 .technology-bg {
-  position: relative;
+
 
   &::before {
     position: absolute;
@@ -1191,9 +1188,7 @@ button {
     height: 100px;
     background-color: #959595;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
     img {
       width: 60%;
@@ -1227,9 +1222,7 @@ button {
     border-top-right-radius: 7px;
     position: relative;
     width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background: #959595;
 
     &::before {
@@ -1392,8 +1385,8 @@ button:focus {
 }
 
 .owl-carousel-stacked .owl-item.center {
-  transform: scale(1.1) !important;
-  margin-top: 29px !important;
+  transform: scale(1.0) !important;
+  // margin-top: 29px !important;
 }
 
 .owl-carousel .owl-item.active.center {
@@ -1496,12 +1489,9 @@ button:focus {
   height: 120px;
   background-color: $dark-red;
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+
   gap: 2px;
-  position: relative;
+ 
   top: 0px;
   padding-top: 18px;
   padding-left: 10px;
@@ -1513,12 +1503,10 @@ button:focus {
   }
 }
 .owl-carousel .item .ItemCard h3 {
-  color: white;
+
   font-size: 1.3rem;
 }
-.owl-carousel .item .ItemCard p {
-  color: white;
-}
+
 .owl-carousel .item .ItemCard h5 {
   position: absolute;
   font-size: 91px;
@@ -1539,10 +1527,10 @@ button:focus {
   // filter: grayscale(0.8);
 }
 .owl-item.active.left-of-center .item .ItemCard {
-  display: none;
+  display: none !important;
 }
 .owl-item.active.right-of-center .item .ItemCard {
-  display: none;
+  display: none !important;
 }
 
 .owl-item.active.left-of-center {
@@ -1634,7 +1622,7 @@ button:focus {
 }
 
 .Brands h2 {
-  text-transform: uppercase;
+
   font-weight: 700;
   font-size: 60px;
   padding: 0px 20px 0px 20px;
@@ -1747,7 +1735,6 @@ button:focus {
     h4 {
       font-size: 50px;
       color: $dark-red;
-      text-transform: uppercase;
 
       @media (max-width: 1300px) {
         font-size: 30px;
@@ -2603,9 +2590,6 @@ button:focus {
   width: 220px !important;
   border: 5px solid $dark-red;
   height: 220px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   padding: 2rem;
   margin-right: 100px !important;
@@ -2651,9 +2635,7 @@ button:focus {
   align-items: center;
   margin: 0 20px auto;
 
-  .sliderImages {
-    background-color: #fff;
-  }
+ 
 
   .slick-list.draggable {
     padding: 70px 10px !important;
@@ -3192,7 +3174,7 @@ button:focus {
     padding-left: 3rem;
   }
   .slick-carousel .Slide-info {
-    right: 127px;
+    right: 45%;
   }
   .slick-carousel .slick-next {
     right: 67px;
