@@ -1,0 +1,119 @@
+ <footer class="text-center text-lg-start bg-black text-white pt-5">
+
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start ">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="./assets/images/logo/nav_logo.png" alt="" data-aos="zoom-out" data-aos-duration="600"   >
+                        </h6>
+                        <p data-aos="zoom-out" data-aos-duration="600"  >
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                            utlabore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5 pt-4">
+                        <!-- Links -->
+                        <h2 class="text-uppercase mainFontN  mb-4" data-aos="zoom-out" data-aos-duration="900" >
+                            ABOUT
+                        </h2>
+                        <p data-aos="fade-down" data-aos-duration="300" >
+                            <a href="#!" class="text-reset">About Us</a>
+                        </p>
+
+
+                        
+                        <p data-aos="fade-down" data-aos-duration="500" >
+                            <a href="#!" class="text-reset">Our Products</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="700" >
+                            <a href="#!" class="text-reset">Industries We Serve</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="900" >
+                            <a href="#!" class="text-reset">Industry Insights</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="1100" >
+                            <a href="#!" class="text-reset">Events and Exhibitions</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="1300" >
+                            <a href="#!" class="text-reset">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5 pt-4">
+                        <!-- Links -->
+                        <h2 class="text-uppercase mainFontN  mb-4" data-aos="zoom-out" data-aos-duration="1200" >
+                            Products
+                        </h2>
+                        <p data-aos="fade-down" data-aos-duration="300">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="500">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="700">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="900">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="1100">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5 pt-4">
+                        <!-- Links -->
+                        <h2 class="text-uppercase  mb-4 mainFontN" data-aos="zoom-out" data-aos-duration="1500" >industries</h2>
+                        <p data-aos="fade-down" data-aos-duration="300">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="500">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="700">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="900">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                        <p data-aos="fade-down" data-aos-duration="1100">
+                            <a href="#!" class="text-reset">Lorem Ipsum</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class=" p-4 container " style="background-color: rgba(0, 0, 0, 0.05);">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-md-8" >Quadri Group © 2023. All Rights Reserved | Design &amp; Developed by <a
+                        href="https://fossphorus.com/" target="blank" class="text-decoration-none text-white"> <img
+                            src="./assets/images/logo/fp-logo.png" width="20px" style="margin-bottom: 0px  !important;"
+                            alt="">
+                        Fossphorus</a></div>
+                <div class="col-md-4">Term & Condition | Privacy Policy </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>

@@ -1,0 +1,59 @@
+@media (min-width:500px) and (max-width:1000px) {
+    .VideoMainBg {
+        width: 90%;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:500px) {
+    .VideoMainBg {
+        width: 96%;
+    }
+}
+
+
+/* ======================= COlLABORATOR ======================= */
+.collaborators-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width:1350px) {
+    .collaborators-div {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    .margin-top-184 {
+        margin-top: 184px !important;
+    }
+
+    /* .industryInsights {
+        overflow-x: hidden;
+    } */
+}
+
+@media (max-width:1000px) {
+    .collaborators-div {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width:770px) {
+    .collaborators-div {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .margin-sm-top-184 {
+        margin-top: 184px !important;
+    }
+
+    .margin-sm-top-510 {
+        margin-top: 510px !important;
+    }
+
+    .collaborators {
+        padding-left: 1rem !important;
+    }
+}
+
+/* ======================= COlLABORATOR ======================= */
